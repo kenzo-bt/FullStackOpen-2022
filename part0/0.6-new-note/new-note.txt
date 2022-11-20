@@ -1,0 +1,8 @@
+title 0.6 -New note
+
+note over Browser: User submits form with new note
+note over Browser: onSubmit event handler triggers on the form, adding the new note to list and redrawing list locally
+note over Browser: New note is made into JSON format and sent to server
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Browser: Responds with: {"message":"note created"}
+note over Browser: Event handler logs the server response to the console
